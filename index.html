@@ -1,99 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-  <head>
-    <meta charset="utf-8" class="next-head">
-    <title class="next-head">Isaac Hinman</title>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" class="next-head">
-    <meta name="description" content="Round and round we spin, with feet of lead and wings of tin." class="next-head">
-    <link rel="icon" type="image/png"
-      href="data:image/png;base64,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"
-      class="next-head">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" class="next-head">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:600" rel="stylesheet" class="next-head">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css" rel="stylesheet"
-      class="next-head">
-    <style id="__jsx-style-838573437">
-      main[data-jsx="838573437"] {
-        font-family: 'Open Sans', sans-serif;
-        -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-        -webkit-text-align: center;
-        text-align: center;
-        background-image: linear-gradient(to left top, #ffffff, #f5f5f5, #eaeaea, #e0e0e0, #d6d6d6);
-        min-height: 100vh
+<head>
+  <meta charset="utf-8">
+
+  <title>Isaac Hinman</title>
+
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <meta name="description" content="Round and round we spin, with feet of lead and wings of tin." class="next-head">
+
+  <link rel="icon" type="image/png"
+    href="data:image/png;base64,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">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" class="next-head">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:600" rel="stylesheet" class="next-head">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css" rel="stylesheet">
+  <style>
+    main {
+      font-family: 'Open Sans', sans-serif;
+      -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+      -webkit-text-align: center;
+      text-align: center;
+      background-image: linear-gradient(to left top, #ffffff, #f5f5f5, #eaeaea, #e0e0e0, #d6d6d6);
+      min-height: 100vh
+    }
+
+    h1 {
+      -webkit-text-transform: uppercase;
+      text-transform: uppercase;
+      font-size: 70px;
+      font-family: 'Oswald', sans-serif;
+      margin: 0 0 10px 0;
+      -webkit-letter-spacing: 0.5px;
+      -moz-letter-spacing: 0.5px;
+      -ms-letter-spacing: 0.5px;
+      letter-spacing: 0.5px;
+      color: #888
+    }
+
+    section {
+      position: relative;
+      padding-top: calc(30vh - 70px)
+    }
+
+    .container {
+      max-width: 840px;
+      padding: 0 100px;
+      margin: 0 auto
+    }
+
+    @media (max-width:600px) {
+      .container {
+        padding: 0 20px
       }
+    }
 
-      h1[data-jsx="838573437"] {
-        -webkit-text-transform: uppercase;
-        text-transform: uppercase;
-        font-size: 70px;
-        font-family: 'Oswald', sans-serif;
-        margin: 0 0 10px 0;
-        -webkit-letter-spacing: 0.5px;
-        -moz-letter-spacing: 0.5px;
-        -ms-letter-spacing: 0.5px;
-        letter-spacing: 0.5px;
-        color: #888
-      }
+    .link {
+      text-decoration: none;
+      font-size: 40px;
+      color: #999
+    }
 
-      .hero[data-jsx="838573437"] {
-        position: relative;
-        padding-top: calc(30vh - 70px)
-      }
+    .link:hover {
+      color: #666
+    }
+  </style>
+</head>
 
-      .container[data-jsx="838573437"] {
-        max-width: 840px;
-        padding: 0 100px;
-        margin: 0 auto
-      }
+<body>
+  <main>
+    <section>
+      <h1>
+        Isaac
+        <br>
+        Hinman
+      </h1>
+      <a class="link" href="//www.linkedin.com/in/isaachinman"><i class="typcn typcn-social-linkedin-circular"
+          aria-hidden="true"></i></a><a class="link" href="//github.com/isaachinman"><i
+          class="typcn typcn-social-github-circular" aria-hidden="true"></i></a><a class="link"
+        href="mailto:isaac@isaachinman.com"><i class="typcn typcn-social-at-circular" aria-hidden="true"></i></a>
+    </section>
+  </main>
 
-      @media (max-width:600px) {
-        .container[data-jsx="838573437"] {
-          padding: 0 20px
-        }
-      }
-
-      .link[data-jsx="838573437"] {
-        font-size: 40px;
-        color: #999
-      }
-
-      .link[data-jsx="838573437"]:hover {
-        color: #666
-      }
-    </style>
-  </head>
-
-  <body>
-    <div>
-      <div id="__next">
-        <div data-reactroot="" data-reactid="1" data-react-checksum="-215588837">
-          <div data-jsx="838573437" data-reactid="2">
-            <!-- react-empty: 3 -->
-            <!-- react-empty: 4 -->
-            <main data-jsx="838573437" data-reactid="5">
-              <div class="hero" data-jsx="838573437" data-reactid="6">
-                <div class="container" data-jsx="838573437" data-reactid="7">
-                  <h1 data-jsx="838573437" data-reactid="8">
-                    <!-- react-text: 9 -->Isaac
-                    <!-- /react-text --><br data-jsx="838573437" data-reactid="10"><!-- react-text: 11 -->Hinman
-                    <!-- /react-text -->
-                  </h1><a class="link" href="//www.linkedin.com/in/isaachinman/" data-jsx="838573437" data-reactid="12"><i
-                      class="typcn typcn-social-linkedin-circular" aria-hidden="true" data-jsx="838573437"
-                      data-reactid="13"></i></a><a class="link" href="//github.com/isaachinman" data-jsx="838573437"
-                    data-reactid="14"><i class="typcn typcn-social-github-circular" aria-hidden="true"
-                      data-jsx="838573437" data-reactid="15"></i></a><a class="link" href="mailto:isaac@isaachinman.com"
-                    data-jsx="838573437" data-reactid="16"><i class="typcn typcn-social-at-circular" aria-hidden="true"
-                      data-jsx="838573437" data-reactid="17"></i></a>
-                </div>
-              </div>
-            </main>
-          </div>
-        </div>
-      </div>
-      <div id="__next-error"></div>
-    </div>
-  </body>
+</body>
 
 </html>

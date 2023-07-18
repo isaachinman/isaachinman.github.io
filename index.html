@@ -15,15 +15,33 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:600" rel="stylesheet" class="next-head">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css" rel="stylesheet">
   <style>
+    @-webkit-keyframes GradientAnimation {
+      0%{background-position:79% 0%}
+      50%{background-position:22% 100%}
+      100%{background-position:79% 0%}
+    }
+    @-moz-keyframes GradientAnimation {
+      0%{background-position:79% 0%}
+      50%{background-position:22% 100%}
+      100%{background-position:79% 0%}
+    }
+    @keyframes GradientAnimation {
+      0%{background-position:79% 0%}
+      50%{background-position:22% 100%}
+      100%{background-position:79% 0%}
+    }
+
     main {
       font-family: 'Open Sans', sans-serif;
       -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
       -webkit-text-align: center;
       text-align: center;
-      background: #485563;
-      background: -webkit-linear-gradient(to right, #29323c, #485563);
-      background: linear-gradient(to right, #29323c, #485563);
+      background: linear-gradient(205deg, #6c757d, #495057, #2e3338, #343a40);
+      background-size: 800% 800%;
+      -webkit-animation: GradientAnimation 21s ease infinite;
+      -moz-animation: GradientAnimation 21s ease infinite;
+      animation: GradientAnimation 21s ease infinite;
       min-height: 100vh
     }
 
